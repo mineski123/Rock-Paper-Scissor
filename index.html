@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player1">
+        <h3><b>PLAYER</b></h3>
+        <div class="showimg">
+          <img src="paper.png" id="imgshow" />
+        </div>
+        <p id="txtresult"></p>
+        <div class="buttons"><center>
+          <button type="button" id="selector" onclick="pkPapel()"> <b>PAPER</b></button>
+          <button type="button" id="selector" onclick="pkGunting()"><b>SCISSORS</b></button>
+          <button type="button" id="selector" onclick="pkBato()"> <b>ROCK</b></button>
+          <br>
+          <button type="button" id="btn" onclick="play()"><b>BATO, BATO, PICK!</b></center></button>
+          <br>
+          <button type="button" id="refresh" value="Refresh" onclick="window.location.reload()">Reset</button>
+        </div>
+      </div>
+
+      <h2 id="Result" class="Result">LETS PLAY</h2>
+
+      <div class="player2">
+        <h3><b>COMPUTER</b></h3>
+        <div class="showimg">
+          <img src="paper.png" id="imgshow2" />
+        </div>
+        <p id="txtresult"></p>
+      </div>
+    </div>
+
+    <div class="record">
+      <p> <b>Wins: </b> <span id="winCount">0</span></p>
+      <p> <b>Losses: </b> <span id="lossCount">0</span></p>
+      <p> <b>Draws: </b> <span id="drawCount">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
